@@ -8,13 +8,14 @@ const ContactSubmission = require("./database/user");
 require("dotenv").config();
 
 const app = express();
-const PORT = 5000;
-app.use(cors());
+const PORT = process.env.PORT || 5000;
+
+app.use(cors({ origin: "*", credentials: true }));
 app.use(express.json());
+
 CONNECTDB();
 app.use("/", Router);
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 app.listen(PORT, () => {
-  console.log(`Server http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

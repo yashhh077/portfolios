@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const MONGODB_URI = "mongodb://localhost:27017/yashPortfolio";
+const MONGODB_URI =
+  "mongodb+srv://yashmahulkar15_db_user:3V0QfZh8bkwfb1Dl@cluster0.mr2x8bw.mongodb.net/";
 
 const CONNECTDB = async () => {
   try {
