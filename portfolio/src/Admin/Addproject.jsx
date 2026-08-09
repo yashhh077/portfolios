@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Admin from "./admin";
+import Admin from "./Admin";
 
 export default function Addproject() {
   const [projects, setProjects] = useState([]);

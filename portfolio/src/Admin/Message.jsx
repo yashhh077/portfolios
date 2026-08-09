@@ -1,7 +1,7 @@
 // src/components/admin/Messages.jsx
 import React, { useEffect, useState } from "react";
 import { api } from "../../uitls.js/api";
-import Admin from "./admin";
+import Admin from "./Admin";
 
 export default function Messages() {
   const [list, setList] = useState([]);
