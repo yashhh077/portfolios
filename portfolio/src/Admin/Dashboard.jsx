@@ -10,8 +10,8 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const resProjects = await axios.get("http://localhost:5000/shoproject");
-        const resMessages = await axios.get("http://localhost:5000/contact");
+        const resProjects = await axios.get("https://portfolios-6d76.onrender.com/shoproject");
+        const resMessages = await axios.get("https://portfolios-6d76.onrender.com/contact");
 
         const projects = resProjects.data.projects || []; // <-- safe access
         const messages = resMessages.data || []; // <-- backend se array aa rha

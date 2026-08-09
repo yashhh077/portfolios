@@ -9,7 +9,7 @@ function Project() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/shoproject");
+        const res = await axios.get("https://portfolios-6d76.onrender.com/shoproject");
         setProjects(res.data.projects || []);
       } catch (err) {
         console.error("Error fetching projects:", err);

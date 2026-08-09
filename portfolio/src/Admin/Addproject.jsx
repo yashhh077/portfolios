@@ -16,7 +16,7 @@ export default function Addproject() {
   // Fetch all projects
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/shoproject");
+      const res = await axios.get("https://portfolios-6d76.onrender.com/shoproject");
       setProjects(res.data.projects);
     } catch (err) {
       console.error("Error fetching projects:", err);
@@ -39,7 +39,7 @@ export default function Addproject() {
     try {
       const token = localStorage.getItem("admintoken"); // 👈 token lo
 
-      await axios.post("http://localhost:5000/addproject", form, {
+      await axios.post("https://portfolios-6d76.onrender.com/addproject", form, {
         headers: {
           Authorization: `Bearer ${token}`, // 👈 token bhejo
         },
@@ -67,7 +67,7 @@ export default function Addproject() {
     try {
       const token = localStorage.getItem("admintoken"); // 👈 token lo
 
-      await axios.delete(`http://localhost:5000/delete/${id}`, {
+      await axios.delete(`https://portfolios-6d76.onrender.com/delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`, // 👈 token bhejo
         },

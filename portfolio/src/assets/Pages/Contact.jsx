@@ -32,7 +32,7 @@ function Contact() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/submit-contact", {
+      const response = await fetch("https://portfolios-6d76.onrender.com/submit-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
