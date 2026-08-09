@@ -6,7 +6,7 @@ import Contact from "./assets/Pages/Contact";
 import Project from "./assets/Pages/Project";
 
 // Admin
-import Admin from "./Admin/admin";
+import Admin from "./Admin/Admin";
 import Dashboard from "./Admin/Dashboard";
 import Messages from "./Admin/Message";
 import Settings from "./Admin/Setting";
