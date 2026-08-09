@@ -32,7 +32,7 @@ function Home() {
     "relative cursor-pointer  text-white hover:text-red hover:scale-130 transition duration-300 after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-red-600 after:transition-all after:duration-300 hover:after:w-full";
   return (
     <>
-      <div className=" top-2 fixed left-0 w-full   rounded-full bg-transparent">
+      <div className="  top-2 fixed left-0 w-full   rounded-full bg-transparent   ">
         <div className="max-w-3xl mx-auto  flex justify-between items-center py-4 px-6">
           {/* Logo */}
           <NavLink to="/" className="flex  items-center gap-2">

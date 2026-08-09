@@ -5,6 +5,7 @@ import { User2Icon, X } from "lucide-react";
 
 function Hero() {
   const [popup, setPopup] = useState(false);
+  const [contactpopup, setContactPopup] = useState(false);
 
   return (
     <>
@@ -24,6 +25,7 @@ function Hero() {
                 "Frontend Developer",
                 "Freelancer",
                 "Quick Learner",
+                "GenAI Developer",
               ]}
               loop={true}
               cursor
@@ -41,12 +43,12 @@ function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
-            <Link
-              to="/contact"
+            <button
+              onClick={() => setContactPopup(true)}
               className="px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-full font-medium transition shadow-lg text-center"
             >
               Contact Me
-            </Link>
+            </button>
 
             <a
               href="/YashMahulkar.pdf"
@@ -95,6 +97,33 @@ function Hero() {
 
               <div className="bg-purple-600 text-white py-3 rounded-lg font-medium hover:bg-purple-500 transition">
                 yashmahulkar15@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {contactpopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/70 backdrop-blur-sm z-50">
+          <div className="bg-white w-[90%] max-w-md rounded-2xl shadow-2xl p-8 relative">
+            <button
+              onClick={() => setContactPopup(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-black"
+            >
+              <X />
+            </button>
+
+            <div className="text-center space-y-4">
+              <h1 className="text-xl font-bold text-gray-800">
+                Let's Work Together
+              </h1>
+
+              <p className="text-gray-600 text-sm">
+                Interested in working together? Reach out and let's build
+                something amazing.
+              </p>
+
+              <div className="bg-purple-600 text-white py-3 rounded-lg font-medium hover:bg-purple-500 transition">
+                yashmahulkar15@gmail.com <br /> +91 7796171031
               </div>
             </div>
           </div>
